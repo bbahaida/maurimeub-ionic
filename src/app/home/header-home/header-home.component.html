@@ -1,0 +1,22 @@
+<div class="header-home">
+  <div class="header-top">
+    <div class="income">
+      <div class="title">Revenus</div>
+      <div class="amount text-success">{{getIncomes(date) | currency}}</div>
+    </div>
+    <div class="date">
+      <ion-icon name="calendar-outline"></ion-icon>
+      <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="date"></ion-datetime>
+    </div>
+  </div>
+  <div class="header-center">
+    <div class="title">Caisse</div>
+    <div class="amount text-success">{{getCaisse(date) | currency}}</div>
+  </div>
+  <div class="header-bottom">
+    <div class="income">
+      <div class="title">Revenus</div>
+      <div class="amount text-danger">{{depenses | currency}}</div>
+    </div>
+  </div>
+</div>
